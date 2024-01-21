@@ -9,15 +9,14 @@ let input = [];
 rl.on('line', function (line) {
     input = line.split(' ');
 }).on('close', function () {
-    const str = input[0];
-    const n = Number(input[1]);
-
-    let result = '';
+    str = input[0];
+    n = Number(input[1]);
     
-    // 주어진 문자열을 n번 반복하여 result에 더합니다.
-    for (let i = 0; i < n; i++) {
+    let result ='';
+    
+    for(let i = 0; i < n; i++){
         result += str;
     }
-
+    
     console.log(result);
 });
