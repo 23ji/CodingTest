@@ -1,13 +1,11 @@
 import Foundation
 
-func solution(_ n: Int) -> Int {
-    var answer: Int = 0
-    let array = String(n) // Int를 String으로 변환
-    
-    for char in array {
-        if let digit = Int(String(char)) {
-            answer += digit
-        }
+func solution(_ n:Int) -> Int
+{
+    var arrNum = Array(String(n))
+    var sum = 0
+    for i in arrNum{
+        sum += Int(String(i))!
     }
-    return answer
+    return sum
 }
